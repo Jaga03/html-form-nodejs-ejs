@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= docTitle %>
+    </title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <header>
+            <div class="header-image-container">
+                <img src="/Images/HeaderCoverPhoto.png" alt="Header Cover Photo" class="Header-image">
+            </div>
+        </header>
+
+        <div class="form-heading-container">
+            <h1 class="main-heading">Party Invite Form</h1>
+            
+            <p>Come for the food, stay for the fun – you're invited to party with us until the night is done!</p>
+        </div>
+
+        <form action="/submit" method="post" class="form-container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="number" id="mobile" name="mobile" required>
+
+            <label>Are you attending?</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="yes" name="attending" value="yes" checked>
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="no" name="attending" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+
+            <br><br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
